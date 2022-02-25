@@ -18,15 +18,7 @@ ul {
   padding:0;
 }
 
-.list h5{
-  text-align: left;
-}
-
-.list ul li{
-  text-align: left;
-}
-
-.incomplete ul li, .complete ul li{
+.list ul li,.incomplete ul li, .complete ul li,.list h5{
   text-align: left;
 }
 
@@ -69,11 +61,15 @@ ul {
   padding: 10px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  margin: 15px 0;
 }
 
 .item p{
   width:90%;
   text-align: start;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 
