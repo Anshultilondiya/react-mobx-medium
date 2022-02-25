@@ -32,19 +32,13 @@ const App = () =>{
                       </div>
                       <Grid container spacing={3}>
                           <Grid item xs={6}>
-                              <div style={{borderRight: "2px solid #777",height:"70vh"}}>
                               <ListTodo/>
-                              </div>
                           </Grid>
                           <Grid item xs={3}>
-                              <div style={{borderRight: "2px solid #777",height:"70vh"}}>
                                   <CompletedTodo/>
-                              </div>
-
-                          </Grid><Grid item xs={3}>
-                          <div style={{height:"70vh"}}>
+                          </Grid>
+                          <Grid item xs={3}>
                               <IncompletedTodo/>
-                          </div>
                       </Grid>
                       </Grid>
                   </div>

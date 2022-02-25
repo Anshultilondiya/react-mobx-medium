@@ -12,9 +12,9 @@ const ListTodo = ()=>{
                         <h5>Remaining</h5>
                         <ul style={{minHeight:"20vh"}}>
                             {todoStore.todoList.map(el=>{
-                                if(el.done){
+                                if(!el.done){
                                     return(
-                                        <li key={el.id} className="item">
+                                        <li key={el.id} className="item remaining">
                                             <p>{el.content}</p>
                                         </li>
                                     )
@@ -27,9 +27,9 @@ const ListTodo = ()=>{
                         <h5>Done</h5>
                         <ul style={{minHeight:"20vh"}}>
                             {todoStore.todoList.map(el=>{
-                                if(!el.done){
+                                if(el.done){
                                     return(
-                                        <li key={el.id} className="item">
+                                        <li key={el.id} className="item done">
                                             <p>{el.content}</p>
                                         </li>
                                     )
